@@ -1,0 +1,47 @@
+@import '../../../assets/style/mixin.scss';
+.card {
+  margin-top: 20px;
+  height: 200px;
+  text-decoration: none;
+  &__inner {
+    border-radius: 25px;
+    &__container {
+      margin-top: 20px;
+      padding: 10px 15px;
+      &__title {
+        color: azure;
+        font-size: 45px;
+      }
+      &__subtitle {
+        padding-top: 70px;
+        color: azure;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@include for-size(phone) {
+  .card {
+    margin-top: 20px;
+    height: 200px;
+    text-decoration: none;
+    &__inner {
+      border-radius: 25px;
+      
+      &__container {
+        margin-top: 20px;
+        padding: 10px 15px;
+
+        &__title {
+          color: azure;
+          font-size: 35px;
+        }
+        &__subtitle {
+          padding-top: 70px;
+          color: azure;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

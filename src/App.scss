@@ -1,0 +1,8 @@
+@import './assets/fonts/fonts.scss';
+.app {
+  font-family: 'Roboto Light';
+  &__body {
+    height: 100%;
+    background-color: #1d1d1d;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../assets/style/mixin.scss';
+.questions {
+  width: 100%;
+  background-color: #1d1d1d;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    &__title {
+      font-size: 90px;
+      color: white;
+    }
+    &__items {
+      margin-top: 50px;
+      padding-bottom: 50px;
+      &__item {
+        margin-top: 50px;
+        position: relative;
+        &__question {
+          margin-left: 5px;
+          color: white;
+          font-size: 25px;
+          font-weight: 700;
+        }
+        &__value {
+          width: 90%;
+          margin-top: 18px;
+          color: #8d8d8d;
+          font-size: 20px;
+          &:before {
+            content: '';
+            width: 7px;
+            height: 100%;
+            position: absolute;
+            background: #a334fb;
+            left: -30px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include for-size(phone) {
+  .questions {
+    width: 100%;
+    background-color: #1d1d1d;
+    &__container {
+      margin: 0 auto;
+      padding: 40px;
+      &__title {
+        font-size: 90px;
+        color: white;
+      }
+      &__items {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        &__item {
+          margin-top: 50px;
+          position: relative;
+          &__question {
+            margin-left: 5px;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          &__value {
+            width: 95%;
+            margin-top: 16px;
+            color: #8d8d8d;
+            font-size: 20px;
+            &:before {
+              content: '';
+              width: 7px;
+              height: 100%;
+              position: absolute;
+              background: #a334fb;
+              left: -30px;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

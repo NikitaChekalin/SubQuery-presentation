@@ -1,0 +1,71 @@
+@import '../../assets/style/mixin.scss';
+@keyframes content_slide {
+  0% {
+    margin-left: 700px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.roadmap {
+  background-color: #0d0d0d;
+  &__container {
+    margin-top: 40px;
+    margin: 0 auto;
+    padding: 80px 5%;
+  }
+  &__items {
+    animation: content_slide 1s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+  }
+}
+
+@include for-size(phone) {
+  .roadmap {
+    margin-top: 20px;
+    background-color: #0d0d0d;
+    &__container {
+      margin: 0 auto;
+      padding: 40px 5%;
+    }
+    &__items {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 40px;
+      color: white;
+    }
+  }
+}
+@include for-size(laptop) {
+  .roadmap {
+    margin-top: 20px;
+    background-color: #0d0d0d;
+    &__container {
+      margin: 0 auto;
+      padding: 40px 5%;
+    }
+    &__items {
+      margin: 0 auto;
+      display: block;
+      width: 400px;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 40px;
+      color: white;
+    }
+  }
+}

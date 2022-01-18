@@ -1,0 +1,116 @@
+@import '../../assets/style/mixin.scss';
+@keyframes content_slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.partners {
+  padding: 40px;
+  background-color: white;
+  &__container {
+    padding: 20px 0 40px 0;
+  }
+  &__title {
+    font-weight: 900;
+    margin-top: 20px;
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+  }
+  &__items {
+    animation: content_left 2s linear;
+    margin: 0 auto;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--item {
+      width: 275px;
+      height: 185px;
+      background-color: transparent;
+      &--photo {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(179, 0, 179);
+        width: 50px;
+        height: 50px;
+        img {
+          width: 40px;
+        }
+      }
+      &--info {
+        padding-top: 20px;
+        text-align: center;
+        &--title {
+          font-size: 20px;
+          font-weight: 700;
+          color: rgb(8, 7, 7);
+        }
+        &--subtitle {
+          font-size: 20px;
+          font-weight: 500;
+          color: rgb(216, 0, 216);
+        }
+      }
+    }
+  }
+}
+@include for-size(phone) {
+  .partners {
+    text-align: left;
+    padding: 40px;
+    background-color: white;
+    &__title {
+      font-weight: 900;
+      margin-top: 20px;
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+      margin-bottom: 30px;
+    }
+    &__items {
+      margin: 0 auto;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      &--item {
+        width: 300px;
+        height: 120px;
+        background-color: transparent;
+        &--photo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: rgb(179, 0, 179);
+          width: 50px;
+          height: 50px;
+          img {
+            width: 40px;
+          }
+        }
+        &--info {
+          text-align: center;
+          &--title {
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(8, 7, 7);
+          }
+          &--subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(216, 0, 216);
+          }
+        }
+      }
+    }
+  }
+}
