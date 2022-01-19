@@ -54,7 +54,7 @@ const faqData = [
   {
     question: 'I want to become a subquari partner what I need to do?',
     value:
-      'You can become a Spartan or an Ambassador until the 23rd of this month if you complete tasks or help the community.',
+      'You can become a Spartan or an Ambassador if you complete tasks or help the community and will active in the group.',
   },
 ]
 export default Questions
